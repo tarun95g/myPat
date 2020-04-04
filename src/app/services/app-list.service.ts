@@ -9,7 +9,7 @@ export class AppService {
   constructor(private http: HttpClient) { }
 
   fetchAppsPage(): any {
-    return this.http.get(`http://play.google.com/store/apps/collection/topselling_free`,  { responseType: 'text' });
+    return this.http.get(`https://play.google.com/store/apps/collection/topselling_free`,  { responseType: 'text' });
   }
 
 }
